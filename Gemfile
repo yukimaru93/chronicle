@@ -70,3 +70,10 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+
+gem "webpacker"
+
+gem "react-rails"
+
+gem "pry-rails"
