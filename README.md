@@ -1,24 +1,28 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+## calendars テーブル
 
-* Ruby version
+| Column              | Type       | Options                        |
+| ------------------- | ---------- | ------------------------------ |
+| my_date             | date       | null: false                    |
+| content             | string     | null: false                    |
+| user                | references | null: false, foreign_key: true |
 
-* System dependencies
+### Association
 
-* Configuration
+- belongs_to :user
 
-* Database creation
+## users テーブル
 
-* Database initialization
+| Column             | Type    | Options     |
+| ------------------ | ------- | ----------- |
+| email              | string  | null: false, unique: true |
+| encrypted_password | string  | null: false |
+| name               | string  | null: false |
+| nickname           | string  | null: false |
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+### Association
 
-* Deployment instructions
-
-* ...
+- has_one :calendar
