@@ -43,7 +43,7 @@ form h3 {
     width: 220px;
 }
 
-form textarea {
+.plan-textarea {
     display: inline-block;
     width: 90%;
     height: 150px;
@@ -54,7 +54,7 @@ form textarea {
     margin: 10px 0 10px 0;
 }
 
-form button {
+.plan-save {
     display: block;
     margin: 0 auto;
     width:45%;
@@ -67,7 +67,7 @@ form button {
     font-size: 18px;
 }
 
-form button:active {
+.plan-save:active {
     box-shadow: none;
     position: relative;
     top:3px;

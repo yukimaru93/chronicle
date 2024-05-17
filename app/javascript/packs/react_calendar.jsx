@@ -103,12 +103,13 @@ const ReactCalendars = () => {
             <textarea
               type="text"
               name="content"
+              class="plan-textarea"
               value={formData.content}
               onChange={enterContent}
               placeholder="予定を入力"
               required
             ></textarea>
-            <button type="submit">保存</button>
+            <button type="submit" class="plan-save">保存</button>
           </form>
         </div>
       )}
@@ -116,7 +117,16 @@ const ReactCalendars = () => {
   );
 };
 
+// document.addEventListener("DOMContentLoaded", () => {
+//   const calendarDataEl = document.getElementById("calendar-data");
+//   createRoot(calendarDataEl).render(<ReactCalendars />);
+// });
+
+// DOMContentLoadedの代わりに、Turboリンクのロードイベントを使用する
 document.addEventListener("DOMContentLoaded", () => {
   const calendarDataEl = document.getElementById("calendar-data");
-  createRoot(calendarDataEl).render(<ReactCalendars />);
+  if (calendarDataEl) { // Elementが存在するかチェック
+    createRoot(calendarDataEl).render(<ReactCalendars />);
+  }
 });
+

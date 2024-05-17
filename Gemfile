@@ -77,3 +77,5 @@ gem "webpacker"
 gem "react-rails"
 
 gem "pry-rails"
+
+gem "devise"
