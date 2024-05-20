@@ -10,7 +10,7 @@ class User < ApplicationRecord
     validates :nickname
   end
 
-  has_one :calendar
+  has_many :calendars
 
   private
 
