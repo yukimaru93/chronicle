@@ -1,8 +1,8 @@
 <header>
-    <h1 class="header-logo"><a href="#">Chronicle</a></h1>
+    <h1 class="header-logo"><%= link_to "Chronicle", root_path %></h1>
     <ul class='lists-right'>
       <% if user_signed_in? %>
-      <li><%= link_to current_user.nickname, calendar_path(calendar.id), class: "user-nickname"%> </li> 
+      <li><%= link_to current_user.nickname, user_path(current_user.id), class: "user-nickname"%> </li> 
       <li><%= button_to 'ログアウト', destroy_user_session_path, method: :delete, data: { turbo: false }, class: "logout" %></li>
       
  

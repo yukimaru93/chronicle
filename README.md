@@ -4,14 +4,15 @@
 ## calendars テーブル
 
 | Column              | Type       | Options                        |
-| ------------------- | ---------- | ------------------------------ |
-| my_date             | date       | null: false                    |
-| content             | string     | null: false                    |
+| ------------------- | ---------- | ------------------------------ |                  |
 | user                | references | null: false, foreign_key: true |
-
+| date                | date       | null: false |
+| content             | text       | null: false |
+ 
 ### Association
 
 - belongs_to :user
+
 
 ## users テーブル
 
@@ -25,4 +26,5 @@
 
 ### Association
 
-- has_one :calendar
+- has_many :calendars
+
