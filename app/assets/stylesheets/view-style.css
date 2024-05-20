@@ -5,15 +5,15 @@
     position: relative;
 }
 
-th{
-    border: 1px solid black ;
+th {
+    border: 1px solid black;
     border-bottom: 5px double black;
 }
 
 #calendar table {
     margin-top: 10px;
     position: absolute;
-    top:180px;
+    top: 180px;
     left: 50px;
     width: 90%;
     height: 48%;
@@ -25,21 +25,36 @@ th{
     text-align: center;
     padding-top: 10px;
     font-size: 2vw;
+    width: calc(100% / 7);
 }
+
 
 .now-time {
     position: absolute;
-    top:130px;
+    top: 130px;
     left: 70px;
     font-size: 40px;
     color: aliceblue;
     font-family: 'Sacramento', cursive;
 }
 
+
+
+.close-form {
+    z-index: "10";
+    position: fixed;
+    top: "150px";
+    left: "150px";
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 form h3 {
     font-size: 24px;
     margin: 0 auto;
-    background: linear-gradient(transparent 70% , #CCCC66 70%);
+    background: linear-gradient(transparent 70%, #CCCC66 70%);
     width: 220px;
 }
 
@@ -57,10 +72,10 @@ form h3 {
 .plan-save {
     display: block;
     margin: 0 auto;
-    width:45%;
+    width: 45%;
     height: 40px;
     border-radius: 10px;
-    cursor:pointer;
+    cursor: pointer;
     border: 1px solid black;
     box-shadow: 0 3px #808080;
     letter-spacing: 10px;
@@ -70,5 +85,5 @@ form h3 {
 .plan-save:active {
     box-shadow: none;
     position: relative;
-    top:3px;
+    top: 3px;
 }
