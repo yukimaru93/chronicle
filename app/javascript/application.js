@@ -5,4 +5,4 @@ Rails.start();
 
 import "@hotwired/turbo-rails"
 import "controllers"
-import "../packs/react_calendar.jsx"
+// import "../packs/react_calendar.jsx"--不要のため削除

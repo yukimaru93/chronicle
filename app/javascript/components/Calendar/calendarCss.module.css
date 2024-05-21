@@ -1,0 +1,38 @@
+.tableStyle {
+    border: 1px solid black;
+    vertical-align: top;
+    font-size: 2vw;
+    padding: 5px 0 0 5px;
+    cursor: pointer;
+    width: calc(100% / 7);
+    height: 20%;
+}
+
+.pStyle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: calc(12px + 0.5vw);
+    line-height: 1.2;
+}
+
+.formStyle {
+    z-index: 10;
+    width: 60%;
+    height: 50%;
+    position: fixed;
+    top: 150px;
+    left: 150px;
+    background-color: rgba(192, 192, 192, 0.9);
+    padding-top: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.buttonStyle {
+    z-index: 10;
+    position: fixed;
+    top: 130px;
+    right: 310px;
+    width: 40px;
+}

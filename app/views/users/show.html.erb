@@ -10,5 +10,6 @@
   </main>
   <%= render "shared/footer" %>
   <meta name="csrf-token" content="<%= form_authenticity_token %>">
-  <%= javascript_pack_tag "react_calendar", defer: true %>
+  <%# <%= javascript_pack_tag "react_calendar", defer: true %> 
+  <%= javascript_pack_tag "calendar" %>
 </body>
